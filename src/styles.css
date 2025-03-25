@@ -695,3 +695,125 @@ th, td {
 .add-to-cart-btn:hover {
     background: #0052a3;
 }
+
+/* Admin Page */
+.admin-page {
+    padding: 2rem var(--padding);
+}
+
+.admin-page h1 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-list,
+.add-product {
+    width: 100%;
+}
+
+.product-list h2,
+.add-product h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.add-product input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+.add-product button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-product button:hover {
+    background: #0052a3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .admin-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .product-list {
+        width: 65%;
+    }
+
+    .add-product {
+        width: 35%;
+    }
+
+    .admin-page h1 {
+        text-align: left;
+        font-size: 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .add-product form input,
+    .add-product form button {
+        font-size: 1.1rem;
+    }
+
+    th, td {
+        font-size: 1rem;
+    }
+}
